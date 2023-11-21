@@ -4,7 +4,7 @@ def caesar_cipher(text: str, move: int) -> str:
         char = ord(char)
         if 65 <= char <= 90:
             res += chr((char - ord("A") + move) % 26 + ord("A"))
-        elif 97 <= char <= 133:
+        elif 97 <= char <= 122:
             res += chr((char - ord("a") + move) % 26 + ord("a"))
         else:
             res += char
